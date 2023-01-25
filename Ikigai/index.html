@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <title>Ikigai</title>
+  </head>
+  <body>
+    <div class="container">
+      <ul>
+        <li>
+          <button class="btn-li-home">
+            <span class="material-symbols-outlined list"> home </span>
+          </button>
+        </li>
+        <li>
+          <button class="btn-li">
+            <span class="material-symbols-outlined list"> inventory_2 </span>
+          </button>
+        </li>
+        <li>
+          <button class="btn-li">
+            <span class="material-symbols-outlined list"> event_note </span>
+          </button>
+        </li>
+        <li>
+          <button class="btn-li">
+            <span class="material-symbols-outlined list"> view_in_ar </span>
+          </button>
+        </li>
+        <li>
+          <button class="btn-li">
+            <span class="material-symbols-outlined list"> cycle </span>
+          </button>
+        </li>
+        <li>
+          <button class="btn-li">
+            <span class="material-symbols-outlined list"> shopping_cart </span>
+          </button>
+        </li>
+        <hr class="hr-ul" />
+        <li>
+          <button class="btn-li">
+            <span class="material-symbols-outlined list"> sms </span>
+          </button>
+        </li>
+        <li>
+          <button class="btn-li">
+            <span class="material-symbols-outlined list"> crop_free </span>
+          </button>
+        </li>
+
+        <div class="down-section">
+          <li>
+            <button class="btn-img">
+              <img src="images/inc.jpeg" alt="profile-picture" />
+            </button>
+          </li>
+          <li>
+            <button class="btn-li">
+              <span class="material-symbols-outlined list"> logout </span>
+            </button>
+          </li>
+        </div>
+      </ul>
+      <main>
+        <nav class="navbar">
+          <div class="nav-left">
+            <button class="btn-back">
+              <span class="material-symbols-outlined"> chevron_left </span>
+            </button>
+
+            <div class="project-holder">
+              <div>
+                <p class="projects">Projects</p>
+                <span class="material-symbols-outlined"> chevron_right </span>
+                <p class="projects">Dashboards</p>
+                <span class="material-symbols-outlined"> chevron_right </span>
+                <p class="inventory">2022 Inventory Dashboard</p>
+              </div>
+              <h2>2022 Inventory Dashboard</h2>
+            </div>
+          </div>
+
+          <div class="nav-right">
+            <button class="btn-left">
+              <span class="material-symbols-outlined"> rotate_left </span>
+            </button>
+            <button class="btn-right">
+              <span class="material-symbols-outlined"> rotate_right </span>
+            </button>
+
+            <button class="btn-discard">Discard Changes</button>
+            <button class="btn-save">Save</button>
+            <button class="btn-dots">
+              <span class="material-symbols-outlined"> more_horiz </span>
+            </button>
+          </div>
+        </nav>
+
+        <!-- Project Name Bar -->
+
+        <div class="dashboard-details">
+          <div class="project">
+            <div class="project-name">
+              <h3>Project Name</h3>
+
+              <button class="btn-back-dark">
+                <span class="material-symbols-outlined"> chevron_left </span>
+              </button>
+
+              <div class="search-box">
+                <span class="material-symbols-outlined search-icon">
+                  search
+                </span>
+                <input class="search" type="text" placeholder="Search.." />
+              </div>
+            </div>
+
+            <hr class="hr-project" />
+
+            <div class="flows">
+              <div class="flow-section">
+                <span class="material-symbols-outlined chevron-right">
+                  chevron_right
+                </span>
+                <h4 class="flow-head">Flows</h4>
+                <button class="btn-add-flow">
+                  <span class="material-symbols-outlined"> add </span>
+                </button>
+              </div>
+
+              <hr class="hr-project" />
+
+              <div>
+                <span class="material-symbols-outlined chevron-right">
+                  chevron_right
+                </span>
+                <h4 class="dashboards-head">Dashboards</h4>
+                <button class="btn-add-dashboards">
+                  <span class="material-symbols-outlined"> add </span>
+                </button>
+              </div>
+
+              <hr class="hr-project" />
+
+              <div>
+                <span class="material-symbols-outlined chevron-right">
+                  chevron_right
+                </span>
+                <h4 class="datasets-head">Datasets</h4>
+                <button class="btn-add-datasets">
+                  <span class="material-symbols-outlined"> add </span>
+                </button>
+              </div>
+
+              <hr class="hr-project" />
+
+              <div>
+                <span class="material-symbols-outlined chevron-right">
+                  chevron_right
+                </span>
+                <h4 class="connectors-head">Connectors</h4>
+                <button class="btn-add-connectors">
+                  <span class="material-symbols-outlined"> add </span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Charst Holder -->
+
+          <div class="charts-holder">
+            <div class="filter">
+              <h3>Filter</h3>
+              <button class="btn-more-vert-filter">
+                <span class="material-symbols-outlined"> more_vert </span>
+              </button>
+
+              <div>
+                <div class="channel">
+                  <p>Channel or Location</p>
+                  <form action="/action_page.php">
+                    <input
+                      list="channels"
+                      name="channel"
+                      placeholder="Type or select [Channel/Location]"
+                      class="channel-bar"
+                    />
+                    <datalist id="channels">
+                      <option value="Channel 1"></option>
+                      <option value="Channel 2"></option>
+                      <option value="Channel 3"></option>
+                      <option value="Channel 4"></option>
+                    </datalist>
+                  </form>
+                </div>
+
+                <p>Master SKU</p>
+                <form action="/action_page.php">
+                  <input
+                    list="masters"
+                    name="master"
+                    placeholder="Type or select [master_sku]"
+                    class="channel-bar"
+                  />
+                  <datalist id="masters">
+                    <option value="Master 1"></option>
+                    <option value="Master 2"></option>
+                    <option value="Master 3"></option>
+                    <option value="Master 4"></option>
+                  </datalist>
+                </form>
+
+                <p>Product Name or Description</p>
+                <form action="/action_page.php">
+                  <input
+                    list="products"
+                    name="product"
+                    placeholder="Type or select [Product]"
+                    class="channel-bar"
+                  />
+                  <datalist id="products">
+                    <option value="Product 1"></option>
+                    <option value="Product 2"></option>
+                    <option value="Product 3"></option>
+                    <option value="Product 4"></option>
+                  </datalist>
+                </form>
+              </div>
+            </div>
+
+            <!-- Inventory Path -->
+
+            <div class="inventory-path">
+              <h3>Inventory Path</h3>
+              <button class="btn-more-vert-list-ip">
+                <span class="material-symbols-outlined"> filter_list </span>
+              </button>
+              <button class="btn-more-vert-ip">
+                <span class="material-symbols-outlined"> more_vert </span>
+              </button>
+
+              <div class="inventory-path-content">
+                <div class="chocolate-cookie"></div>
+                <p class="chocolate-cookie-word">Chocolate Chip Cookie</p>
+                <div class="snickerdoodle-cookie"></div>
+                <p class="snickerdoodle-cookie-word">Snickerdoodle Cookie</p>
+                <div class="ginger-cookie"></div>
+                <p class="ginger-cookie-word">Ginger Cookie</p>
+                <div class="sugar-cookie"></div>
+                <p class="sugar-cookie-word">Sugar Cookie</p>
+                <div class="double-chocolate"></div>
+                <p class="double-chocolate-word">Double Chocolate Cookie</p>
+              </div>
+
+              <div>
+                <p class="amazon-name">Amazon</p>
+                <div class="amazon-color"></div>
+                <p class="walmart-name">Walmart</p>
+                <div class="walmart-color"></div>
+              </div>
+            </div>
+
+            <!-- Inventory By Channel -->
+
+            <div class="inventory-channel">
+              <h3>Inventory by Channel</h3>
+              <button class="btn-more-vert-list-ic">
+                <span class="material-symbols-outlined"> filter_list </span>
+              </button>
+              <button class="btn-more-vert-ic">
+                <span class="material-symbols-outlined"> more_vert </span>
+              </button>
+
+              <p class="quantity">Quantity</p>
+              <div class="quantity-bar-height">
+                <div class="quantity-number-a">
+                  <p>1500</p>
+                  <hr class="quantity-hr-a" />
+                </div>
+
+                <div class="quantity-number-b">
+                  <p>1000</p>
+                  <hr class="quantity-hr-b" />
+                </div>
+
+                <div class="quantity-number-c">
+                  <p>500</p>
+                  <hr class="quantity-hr-c" />
+                </div>
+
+                <div class="quantity-number-d">
+                  <p>0</p>
+                  <hr class="quantity-hr-d" />
+                </div>
+              </div>
+
+              <div>
+                <div class="color-a"></div>
+                <div class="color-b"></div>
+                <div class="color-c"></div>
+                <div class="color-d"></div>
+                <div class="color-e"></div>
+              </div>
+
+              <div>
+                <div class="color-aa"></div>
+                <div class="color-bb"></div>
+                <div class="color-cc"></div>
+                <div class="color-dd"></div>
+                <div class="color-ee"></div>
+              </div>
+
+              <p class="amazon-channel">Amazon</p>
+              <p class="walmart-channel">Walmart</p>
+            </div>
+
+            <!-- Inventory By SKU -->
+
+            <div class="inventory-sku">
+              <h3>Inventory by SKU</h3>
+              <button class="btn-more-vert-list-sku">
+                <span class="material-symbols-outlined"> filter_list </span>
+              </button>
+              <button class="btn-more-vert-sku">
+                <span class="material-symbols-outlined"> more_vert </span>
+              </button>
+
+              <div class="amazon-walmart">
+                <span class="material-symbols-outlined amazon-circle">
+                  fiber_manual_record
+                </span>
+                <h4 class="amazon-word">Amazon</h4>
+                <span class="material-symbols-outlined walmart-circle">
+                  fiber_manual_record
+                </span>
+                <h4 class="walmart-word">Walmart</h4>
+              </div>
+
+              <p class="quantity">Quantity</p>
+              <div class="quantity-bar-height">
+                <div class="quantity-number-a">
+                  <p>1500</p>
+                  <hr class="quantity-hr-a" />
+                </div>
+
+                <div class="quantity-number-b">
+                  <p>1000</p>
+                  <hr class="quantity-hr-b" />
+                </div>
+
+                <div class="quantity-number-c">
+                  <p>500</p>
+                  <hr class="quantity-hr-c" />
+                </div>
+
+                <div class="quantity-number-d">
+                  <p>0</p>
+                  <hr class="quantity-hr-d" />
+                </div>
+              </div>
+
+              <div>
+                <div class="blue-a"></div>
+                <div class="blue-b"></div>
+              </div>
+
+              <div>
+                <div class="blue-aa"></div>
+                <div class="blue-bb"></div>
+              </div>
+
+              <div>
+                <div class="blue-aaa"></div>
+                <div class="blue-bbb"></div>
+              </div>
+
+              <div>
+                <div class="blue-aaaa"></div>
+                <div class="blue-bbbb"></div>
+              </div>
+
+              <div>
+                <div class="blue-aaaaa"></div>
+                <div class="blue-bbbbb"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Components and Charts -->
+
+          <div class="components">
+            <div class="panel">
+              <button>
+                <span class="material-symbols-outlined"> extension </span
+                >Components
+              </button>
+              <button>
+                <span class="material-symbols-outlined"> pie_chart </span>Charts
+              </button>
+            </div>
+
+            <div>
+              <button class="btn-tabs">
+                <span class="material-symbols-outlined btn-tabs-icon">
+                  table_view
+                </span>
+                <p>Tabs</p>
+              </button>
+              <button class="btn-tabs">
+                <span class="material-symbols-outlined btn-tabs-icon">
+                  east
+                </span>
+                <p>Row</p>
+              </button>
+              <button class="btn-tabs">
+                <span class="material-symbols-outlined btn-tabs-icon">
+                  south
+                </span>
+                <p>Column</p>
+              </button>
+              <button class="btn-tabs">
+                <span class="material-symbols-outlined btn-tabs-icon">
+                  title
+                </span>
+                <p>Header</p>
+              </button>
+              <button class="btn-tabs">
+                <span class="material-symbols-outlined btn-tabs-icon">
+                  code
+                </span>
+                <p>Markdown</p>
+              </button>
+              <button class="btn-tabs">
+                <span class="material-symbols-outlined btn-tabs-icon">
+                  remove
+                </span>
+                <p>Divider</p>
+              </button>
+              <button class="btn-tabs">
+                <span class="material-symbols-outlined btn-tabs-icon">
+                  table
+                </span>
+                <p>Table</p>
+              </button>
+              <button class="btn-tabs">
+                <span class="material-symbols-outlined btn-tabs-icon">
+                  check_box_outline_blank
+                </span>
+                <p>Process Diagram</p>
+              </button>
+              <button class="btn-tabs">
+                <span class="material-symbols-outlined btn-tabs-icon">
+                  extension
+                </span>
+                <p>Trigger Flow [TBD]</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
